@@ -3,5 +3,65 @@
 \* ------------------------------------------------------------ */
 
 .radio {
+	display: inline-block;
+	position: relative;
+	padding-left: 29px;
+	cursor: pointer;
+	font-size: 1.6rem;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+	input {
+		position: absolute;
+		opacity: 0;
+		cursor: pointer;
+	}
+
+	label {
+		font-size: 1.6rem;
+		margin-bottom: 0;
+		font-weight: 400;
+	}
+
+	.radio__button {
+		position: absolute;
+		top: -2px;
+		left: 0;
+		height: 24px;
+		width: 24px;
+		background-color: $c-white;
+		border-radius: 50%;
+		border: 2px solid $c-black;
+	}
+
+	&:hover input ~ .radio__button {
+		background-color: $c-white;
+	}
+
+	input:checked ~ .radio__button {
+		background-color: $c-white;
+	}
+
+	.radio__button:after {
+		content: "";
+		position: absolute;
+		display: none;
+	}
+
+	input:checked ~ .radio__button:after {
+		display: block;
+	}
+
+	.radio__button:after {
+	 	top: 3px;
+		left: 3px;
+		width: 14px;
+		height: 14px;
+		border-radius: 50%;
+		background: $c-black;
+	}
 }
+
 

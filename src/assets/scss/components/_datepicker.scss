@@ -1,0 +1,77 @@
+/* ------------------------------------------------------------ *\
+	datepicker
+\* ------------------------------------------------------------ */
+
+.datepicker {
+	width: 242px;
+	padding: 35px;
+	background-color: $c-white;
+	border-radius: 5px;
+
+	.datepicker-header {
+		position: relative;
+	}
+
+	.datepicker-header .view-switch {
+		font-size: 1.4rem;
+		font-weight: 500;
+		letter-spacing: -0.02em;
+		background: none;
+		border: none;
+	}
+
+	.datepicker-header .prev-btn,
+	.datepicker-header .next-btn {
+		border: none;
+		background: none;
+		height: 12px;
+		width: 12px;
+		font-size: 1.5rem;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+	.datepicker-header .prev-btn img,
+	.datepicker-header .next-btn img {
+		width: 12px;
+		height: 12px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%) rotate(-90deg);
+	}
+
+	.datepicker-header .prev-btn {
+		right: 10px;
+	}
+
+	.datepicker-header .prev-btn img {
+		transform: translate(-50%, -50%) rotate(90deg);
+	}
+
+	.days-of-week {
+		display: flex;
+	}
+
+	.days-of-week span {
+		max-width: 14.28%;
+		flex: 0 0 14.28%;
+	}
+
+	.datepicker-grid {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.datepicker-grid span {
+		max-width: 14.28%;
+		flex: 0 0 14.28%;
+		font-size: 1rem;
+	}
+}
+
+/* .focus-visible .datepicker {
+	opacity: 1;
+}
+ */

@@ -1,0 +1,61 @@
+/* ------------------------------------------------------------ *\
+	choices
+\* ------------------------------------------------------------ */
+
+.choices {
+	display: inline-block;
+	position: relative;
+
+
+	.choices__inner {
+		border: none;
+		background: none;
+		margin-left: -7px;
+	}
+
+	.choices__input {
+		display: none;
+	}
+
+	.choices__item--selectable {
+		white-space: nowrap;
+	}
+
+	.choices__item:after {
+		display: none;
+	}
+
+	&:after {
+		display: none;
+	}
+
+	&:before {
+		content: '';
+		height: 18px;
+		width: 18px;
+		position: absolute;
+		top: 2px;
+		left: 18px;
+		background-image: url('../images/svg/angle-down.svg');
+		background-size: cover;
+	}
+
+	.choices__list {
+		font-size: 1.6rem;
+		max-width: 56px;
+		overflow: hidden;
+		border-radius: 5px;
+		overflow-y: auto;
+		max-height: unset;
+		margin-top: -12px;
+	}
+
+	.choices__list--dropdown {
+		max-width: 56px;
+	}
+
+	.choices__list--single {
+
+	}
+}
+

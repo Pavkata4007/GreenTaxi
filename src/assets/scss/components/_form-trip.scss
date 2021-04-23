@@ -1,0 +1,114 @@
+/* ------------------------------------------------------------ *\
+	form-trip
+\* ------------------------------------------------------------ */
+
+.form-trip {
+
+	.form__row {
+		display: flex;
+	}
+
+	.form__row--alt {
+		background-color: $c-white;
+		padding: 5px 0 1px;
+		border-bottom-left-radius: 5px;
+		border-bottom-right-radius: 5px;
+		border-top-right-radius: 5px;
+	}
+
+	.form__controls {
+		background-color: $c-white;
+		padding: 19px 15px;
+	}
+
+	.form__controls--top-left {
+		border-top-left-radius: 5px;
+	}
+
+	.form__controls--top-right {
+		border-top-right-radius: 5px;
+		padding-right: 38px;
+	}
+
+	.form__controls--location {
+		width: 255px;
+		position: relative;
+		padding-bottom: 0;
+	}
+
+	.form__controls--location:after {
+		content: '';
+		width: 1px;
+		height: 16px;
+		background-color: #C7C7C7;
+		position: absolute;
+		top: 50%;
+		right: 0;
+		transform: translateY(-50%);
+	}
+
+	.form__controls--location label {
+		display: inline-block;
+		height: 18px;
+		width: 18px;
+		margin-left: 10px;
+	}
+
+	.form__controls--calendar {
+		width: 211px;
+		position: relative;
+		padding: 19px 24px 0;
+	}
+
+	.form__controls--calendar span {
+		font-size: 1.6rem;
+		vertical-align: middle;
+	}
+
+	.form__controls--calendar:after {
+		content: '';
+		width: 1px;
+		height: 16px;
+		background-color: #C7C7C7;
+		position: absolute;
+		top: 50%;
+		right: 0;
+		transform: translateY(-50%);
+	}
+
+	.form__controls--calendar label {
+		display: inline-block;
+		height: 18px;
+		width: 18px;
+	}
+
+	.form__controls--location input {
+		vertical-align: middle;
+	}
+
+	.form__controls--location-alt {
+		width: 228px;
+	}
+
+	.form__controls--people label {
+		display: inline-block;
+		height: 18px;
+		width: 18px;
+	}
+
+	.form__controls--people {
+		padding: 19px 29px 0 23px;
+		position: relative;
+	}
+
+	.form__controls--people:after {
+		content: '';
+		width: 1px;
+		height: 16px;
+		background-color: #C7C7C7;
+		position: absolute;
+		top: 50%;
+		right: 0;
+		transform: translateY(-50%);
+	}
+}

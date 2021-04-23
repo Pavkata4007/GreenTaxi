@@ -18,3 +18,19 @@
 	padding-left: 0;
 	padding-right: 0;
 }
+
+.btn--green {
+	background-color: $c-green;
+	color: $c-black;
+	padding: 8px 18px;
+	font-weight: 400;
+	border: 2px solid $c-green;
+	border-radius: 5px;
+	font-size: 1.6rem;
+	transition: background .4s, color .4s;
+}
+
+.btn--green:hover {
+	color: $c-green;
+	background-color: $c-black;
+}

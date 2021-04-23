@@ -3,4 +3,33 @@
 \* ------------------------------------------------------------ */
 
 .header {
+	position: absolute;
+	padding: 35px 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 3;
+
+	.header__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.header__content {
+		display: flex;
+		align-items: center;
+	}
+
+	.header__nav {
+		margin: 0 20px;
+	}
+
+	.header__actions {
+		margin-right: 24px;
+	}
+
+	.header__logo {
+
+	}
 }
