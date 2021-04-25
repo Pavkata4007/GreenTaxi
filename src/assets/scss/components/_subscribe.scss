@@ -1,0 +1,33 @@
+/* ------------------------------------------------------------ *\
+	subscribe
+\* ------------------------------------------------------------ */
+
+.subscribe {
+
+	.subscribe__inner {
+		max-width: 340px;
+	}
+
+	.subscribe__field {
+		border: none;
+		border-bottom: 1px solid #C7C7C7;
+		font-size: 1.8rem;
+		padding-bottom: 11px;
+		display: block;
+		color: #808080;
+		width: 100%;
+		margin-bottom: 24px;
+	}
+
+	.subscribe__btn {
+		display: block;
+		width: 100%;
+		margin-bottom: 11px;
+	}
+
+	.subscribe__meta {
+		color: #808080;
+		font-size: 1.4rem;
+		text-align: center;
+	}
+}

@@ -1,0 +1,27 @@
+/* ------------------------------------------------------------ *\
+	section-subscribe
+\* ------------------------------------------------------------ */
+
+.section-subscribe {
+	padding: 20px 0;
+
+	h3 {
+		font-weight: 500;
+		letter-spacing: -0.02em;
+		margin-bottom: 54px;
+	}
+
+	.section__content {
+		max-width: 400px;
+		margin: 0 199px 9px auto;
+	}
+
+	.section__grid {
+		align-items: center;
+	}
+
+	.section__image img {
+		max-width: unset;
+		float: left;
+	}
+}

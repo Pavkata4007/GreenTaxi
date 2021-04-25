@@ -1,0 +1,52 @@
+/* ------------------------------------------------------------ *\
+	section-content-alt
+\* ------------------------------------------------------------ */
+
+.section-content-alt {
+	background-color: #FBFBFB;
+	padding: 50px 0 55px;
+
+	.section__grid {
+		padding: 0 27px;
+		align-items: center;
+	}
+
+	.section__image {
+		padding: 0 93px 50px 0;
+		position: relative;
+	}
+
+	.section__image img {
+		display: block;
+		border-radius: 5px;
+		position: relative;
+		z-index: 2;
+	}
+
+	.section__image:after {
+		content: '';
+		position: absolute;
+		bottom: 18px;
+    	left: -22px;
+		background-color: $c-green;
+		height: 296px;
+		width: 520px;
+		border-radius: 5px;
+	}
+
+	h3 {
+		font-weight: 500;
+		letter-spacing: -0.02em;
+		margin-bottom: 14px;
+	}
+
+	.section__content {
+		padding-right: 60px;
+		font-size: 2rem;
+		font-weight: 400;
+	}
+
+	p {
+		margin-bottom: 30px;
+	}
+}

@@ -1,0 +1,36 @@
+/* ------------------------------------------------------------ *\
+	section-text
+\* ------------------------------------------------------------ */
+
+.section-text {
+	padding: 46px 0 51px;
+
+	.section__content {
+		font-size: 1.6rem;
+		line-height: 1.6;
+		padding-right: 35px;
+	}
+
+	.section__grid {
+		align-items: center;
+	}
+
+	p {
+		margin-bottom: 0;
+	}
+
+	p + p {
+		margin-top: 34px;
+	}
+
+	h5 {
+		font-weight: 400;
+		margin-bottom: 11px;
+	}
+
+	h3 {
+		font-weight: 500;
+		letter-spacing: -0.02em;
+		line-height: 1;
+	}
+}

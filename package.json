@@ -12,6 +12,7 @@
         "prod": "cross-env NODE_ENV=production npm run start -- build"
     },
     "dependencies": {
+        "choices.js": "^9.0.1",
         "core-js": "^3.4.1"
     },
     "devDependencies": {
@@ -52,6 +53,7 @@
         "postcss-utilities": "^0.7.0",
         "posthtml-include": "^1.1.0",
         "slash": "^2.0.0",
+        "vanillajs-datepicker": "^1.1.4",
         "webpack": "^4.19.1",
         "webpack-stream": "^5.1.1",
         "yargs": "^10.0.3"

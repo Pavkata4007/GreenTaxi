@@ -1,0 +1,60 @@
+/* ------------------------------------------------------------ *\
+	section-newsletter
+\* ------------------------------------------------------------ */
+
+.section-newsletter {
+	background-size: cover;
+	background-position: center;
+	padding: 41px 0 0;
+	position: relative;
+
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: $c-dark-green;
+		opacity: .8;
+	}
+
+	.section__inner {
+		position: relative;
+		z-index: 2;
+		padding-bottom: 97px;
+	}
+
+	.section__icon {
+		position: absolute;
+		bottom: 0;
+		right: -51px;
+	}
+
+	.section__content {
+		max-width: 825px;
+		margin: 0 auto;
+		text-align: center;
+		color: $c-white;
+		font-size: 2rem;
+	}
+
+	h3 {
+		color: $c-white;
+		font-weight: 500;
+		letter-spacing: -0.02em;
+		margin-bottom: 34px;
+	}
+
+	h3 span {
+		color: $c-green;
+	}
+
+	p {
+		margin-bottom: 50px;
+	}
+
+	a {
+		margin: 0 2px;
+	}
+}

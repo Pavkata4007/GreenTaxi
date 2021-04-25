@@ -34,3 +34,25 @@
 	color: $c-green;
 	background-color: $c-black;
 }
+
+.btn--transparent {
+	border: 1px solid $c-white;
+	color: $c-white;
+	background: transparent;
+	font-weight: 400;
+	font-size: 1.6rem;
+	padding: 9px 20px;
+	border-radius: 5px;
+	transition: background .4s, color .4s, border .4s;
+}
+
+.btn--transparent:hover {
+	background-color: $c-green;
+	border: 1px solid $c-green;
+	color: $c-black;
+}
+
+.btn--large {
+	font-size: 2rem;
+	padding: 11px 14px;
+}
