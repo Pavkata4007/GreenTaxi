@@ -1,0 +1,52 @@
+/* ------------------------------------------------------------ *\
+	section-text-alt
+\* ------------------------------------------------------------ */
+
+.section-text-alt {
+	padding: 45px 0 124px;
+
+	.section__inner {
+		padding: 0 10px;
+		font-size: 1.6rem;
+		line-height: 1.6;
+		padding-right: 130px;
+	}
+
+	.section__inner p {
+		margin-bottom: 0;
+	}
+
+	.section__inner p + p {
+		margin-top: 49px;
+	}
+
+	.section__content {
+		margin: 50px 10px 46px;
+		padding: 46px 80px 49px 24px;
+		border-radius: 10px;
+		background-color: $c-dark-green;
+		color: $c-white;
+		font-size: 1.6rem;
+		line-height: 1.6;
+		font-weight: 400;
+	}
+
+	.section__content p {
+		margin-bottom: 0;
+	}
+
+	.section__content p + p {
+		margin-top: 25px;
+	}
+
+	.section__content h6 {
+		letter-spacing: -0.02em;
+		font-size: 1.8rem;
+		font-weight: 500;
+		margin: 0 5px 21px;
+	}
+}
+
+.section-text-alt--alt {
+	padding: 45px 0 61px;
+}

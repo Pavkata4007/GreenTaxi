@@ -4,10 +4,34 @@
 
 .footer-nav {
 
+	@include breakpoint-down(mobile-medium) {
+		padding: 22px 0 26px;
+		position: relative;
+	}
+
+	&:after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: -25px;
+		right: -25px;
+		height: 1px;
+		background-color: #C7C7C7;
+		display: none;
+
+		@include breakpoint-down(mobile-medium) {
+			display: block;
+		}
+	}
+
 	h5 {
 		color: #C7C7C7;
 		font-weight: 500;
 		margin-bottom: 16px;
+
+		@include breakpoint-down(mobile-medium) {
+			letter-spacing: -0.02em;
+		}
 	}
 
 	li {
@@ -19,6 +43,10 @@
 		text-decoration: none;
 		font-weight: 400;
 		transition: color .4s;
+
+		@include breakpoint-down(mobile-medium) {
+			font-size: 1.6rem;
+		}
 	}
 
 	a:hover {
@@ -27,5 +55,9 @@
 
 	li + li {
 		margin-top: 16px;
+
+		@include breakpoint-down(mobile-medium) {
+			margin-top: 13px;
+		}
 	}
 }

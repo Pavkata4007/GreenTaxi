@@ -7,6 +7,10 @@
 	position: relative;
 	overflow: hidden;
 
+	@include breakpoint-down(mobile-medium) {
+		padding: 36px 0 39px;
+	}
+
 	&:after {
 		content: '';
 		position: absolute;
@@ -20,22 +24,52 @@
 		@include breakpoint-down(larger-desktop) {
 			left: 67%;
 		}
+
+		@include breakpoint-down(tablet) {
+			transform: none;
+			bottom: 0;
+			left: 0;
+			top: auto;
+			right: 0;
+			height: 230px;
+		}
+
+		@include breakpoint-down(mobile-medium) {
+			height: 217px;
+		}
 	}
 
 	h3 {
 		font-weight: 500;
 		letter-spacing: -0.02em;
 		margin-bottom: 48px;
+
+		@include breakpoint-down(mobile-medium) {
+			margin: 0 10px 26px;
+			line-height: 1;
+		}
 	}
 
 	.footer__inner {
 		display: flex;
+
+		@include breakpoint-down(tablet) {
+			flex-wrap: wrap;
+		}
+
+		@include breakpoint-down(mobile-medium) {
+			padding: 0 10px;
+		}
 	}
 
 	.footer__nav {
 		max-width: 62%;
 		flex: 0 0 62%;
-		margin-bottom: 65px;
+
+		@include breakpoint-down(tablet) {
+			max-width: 100%;
+			flex: 0 0 100%;
+		}
 	}
 
 	.footer__entry {
@@ -44,6 +78,11 @@
 		position: relative;
 		z-index: 2;
 		text-align: right;
+
+		@include breakpoint-down(tablet) {
+			max-width: 100%;
+			flex: 0 0 100%;
+		}
 	}
 
 	.footer__content {
@@ -52,15 +91,46 @@
 		max-width: 420px;
 		margin-left: 129px;
     	padding-top: 64px;
+
+    	@include breakpoint-down(tablet) {
+    		padding-top: 50px;
+    		max-width: 600px;
+    		margin: 50px auto 0;
+    		text-align: center;
+    	}
+
+    	@include breakpoint-down(mobile-medium) {
+    		font-size: 1.4rem;
+    		margin: 0 auto;
+    		padding-top: 48px;
+    	}
 	}
 
 	.footer__content p {
 		line-height: 1.56;
 		margin-bottom: 0;
+
+		@include breakpoint-down(mobile-medium) {
+			line-height: 1.21;
+			padding: 0 10px;
+		}
 	}
 
 	.footer__logo {
 		margin-bottom: 15px;
 		text-align: center;
+
+		@include breakpoint-down(mobile-medium) {
+			max-width: 186px;
+			margin: 0 auto 25px;
+		}
+	}
+
+	.footer__bar {
+		margin-top: 65px;
+
+		@include breakpoint-down(mobile) {
+			margin: 24px 0;
+		}
 	}
 }

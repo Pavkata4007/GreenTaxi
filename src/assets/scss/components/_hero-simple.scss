@@ -1,0 +1,26 @@
+/* ------------------------------------------------------------ *\
+	hero-simple
+\* ------------------------------------------------------------ */
+
+.hero-simple {
+	height: 290px;
+	background-color: $c-dark-green;
+	padding: 51px 0;
+
+	.hero__shell {
+		height: 100%;
+	}
+
+	.hero__inner {
+		padding: 0 9px;
+		height: 100%;
+		display: flex;
+		align-items: flex-end;
+	}
+
+	h3 {
+		letter-spacing: -0.02em;
+		color: $c-white;
+		font-weight: 500;
+	}
+}
