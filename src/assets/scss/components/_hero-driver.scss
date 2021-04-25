@@ -1,0 +1,42 @@
+/* ------------------------------------------------------------ *\
+	hero-driver
+\* ------------------------------------------------------------ */
+
+.hero-driver {
+	height: 700px;
+	padding-top: 217px;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: $c-dark-green;
+		opacity: .5;
+	}
+
+	.hero__inner {
+		position: relative;
+		z-index: 1;
+		max-width: 819px;
+		margin: 0 auto;
+		font-size: 2rem;
+		text-align: center;
+		color: $c-white;
+	}
+
+	h1 {
+		letter-spacing: -0.02em;
+		margin-bottom: 7px;
+		font-weight: 500;
+	}
+
+	p {
+		margin-bottom: 50px;
+	}
+}
