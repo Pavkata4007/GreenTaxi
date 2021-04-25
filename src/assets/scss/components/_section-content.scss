@@ -3,13 +3,13 @@
 \* ------------------------------------------------------------ */
 
 .section-content {
+	position: relative;
 
 	.section__inner {
 		padding: 38px 72px 0 0;
 	}
 
 	.section__grid {
-		position: relative;
 		padding-bottom: 76px;
 	}
 
@@ -40,6 +40,6 @@
 	.section__icon {
 		position: absolute;
 		bottom: 0;
-		left: -51px;
+		left: 0;
 	}
 }

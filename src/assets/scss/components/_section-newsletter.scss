@@ -28,7 +28,8 @@
 	.section__icon {
 		position: absolute;
 		bottom: 0;
-		right: -51px;
+		right: 0;
+		z-index: 1;
 	}
 
 	.section__content {

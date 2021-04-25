@@ -1,0 +1,24 @@
+/* ------------------------------------------------------------ *\
+	section-testimonials
+\* ------------------------------------------------------------ */
+
+.section-testimonials {
+	padding: 49px 0 77px;
+	background-color: $c-dark-green;
+	position: relative;
+
+	.section__icon {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+	}
+
+	.section__entry {
+		display: flex;
+	}
+
+	.section__quote {
+		max-width: 120px;
+		flex: 0 0 120px;
+	}
+}
