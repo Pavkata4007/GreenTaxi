@@ -5,17 +5,48 @@
 .section-content {
 	position: relative;
 
+	@include breakpoint-down(large-desktop) {
+		padding-bottom: 125px;
+	}
+
 	.section__inner {
 		padding: 38px 72px 0 0;
+
+		@include breakpoint-down(tablet) {
+			padding: 10px 0 0;
+			max-width: 670px;
+			padding-bottom: 30px;
+		}
+
+		@include breakpoint-down(mobile) {
+			padding: 35px 0 50px 10px;
+		}
 	}
 
 	.section__grid {
 		padding-bottom: 76px;
+
+		@include breakpoint-down(tablet) {
+			flex-wrap: wrap;
+		}
+	}
+
+	.section__col {
+
+		@include breakpoint-down(tablet) {
+			max-width: 100%;
+			flex: 0 0 100%;
+		}
 	}
 
 	.section__image {
 		border-radius: 5px;
 		overflow: hidden;
+
+		@include breakpoint-down(mobile) {
+			padding: 0 10px;
+			margin-bottom: 50px;
+		}
 	}
 
 	h3 {
@@ -26,6 +57,14 @@
 		padding: 28px 20px 24px 26px;
 		border-radius: 5px;
 		margin-bottom: 34px;
+
+		@include breakpoint-down(mobile) {
+			font-size: 2.4rem;
+			max-width: 325px;
+			padding: 16px 5px 14px 14px;
+			letter-spacing: -0.02em;
+			margin-bottom: 23px;
+		}
 	}
 
 	h3 span {
@@ -35,11 +74,21 @@
 	.section__content {
 		font-size: 2rem;
 		padding: 0 25px;
+
+		@include breakpoint-down(tablet) {
+			padding: 0;
+		}
+
+		@include breakpoint-down(mobile) {
+			font-size: 1.6rem;
+			padding: 0 10px;
+		}
 	}
 
 	.section__icon {
 		position: absolute;
 		bottom: 0;
 		left: 0;
+		z-index: -1;
 	}
 }

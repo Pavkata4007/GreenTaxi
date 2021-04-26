@@ -1,18 +1,17 @@
+
 /**
- * Handle mobile-nav
+ * Handle mobile-nav.
+ *
  */
 
-const $window = $(window);
-const $mobileNav = $('.js-mobile-nav')
+const mobileNav = document.querySelector('.js-mobile-nav');
+const body = document.querySelector('body');
+const headerContent = document.querySelector('.header .header__content');
 
-$mobileNav.on('click', function() {
-	const $this = $(this);
-	const $header = $('.header .header__content');
-	const $body = $('body');
-	const $dropdown = $('.js-nav ul ul');
+mobileNav.addEventListener('click', function() {
 
-	$header.toggleClass('is-active');
-	$this.toggleClass('mobile-nav--active');
-	$body.toggleClass('is-fixed');
+	mobileNav.classList.toggle('mobile-nav--active');
+	body.classList.toggle('is-fixed');
+	headerContent.classList.toggle('is-active');
 });
 

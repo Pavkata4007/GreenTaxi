@@ -40,12 +40,12 @@
 }
 
 .mobile-nav--alt span {
-	background-color: $c-green;
+	background-color: $c-white;
 }
 
 .mobile-nav--active span {
 	transition: background .2s, top .2s, opacity .2s, transform .2s .25s;
-	background-color: $c-green;
+	background-color: $c-white;
 }
 
 .mobile-nav--active span:nth-child(3),

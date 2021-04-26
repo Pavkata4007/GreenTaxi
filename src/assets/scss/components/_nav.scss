@@ -7,6 +7,9 @@
 	ul {
 		display: flex;
 
+		@include breakpoint-down(mobile) {
+			display: block;
+		}
 	}
 
 	li {
@@ -15,6 +18,10 @@
 
 	li + li {
 		margin-left: 21px;
+
+		@include breakpoint-down(mobile) {
+			margin: 24px 0 0;
+		}
 	}
 
 	a {
@@ -23,6 +30,10 @@
 		font-size: 1.8rem;
 		color: $c-white;
 		transition: color .4s;
+
+		@include breakpoint-down(mobile) {
+			font-size: 2rem;
+		}
 	}
 
 	a:hover {

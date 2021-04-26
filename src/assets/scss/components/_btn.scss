@@ -21,13 +21,17 @@
 
 .btn--green {
 	background-color: $c-green;
-	color: $c-black;
+	color: $c-black !important;
 	padding: 8px 18px;
 	font-weight: 400;
 	border: 2px solid $c-green;
 	border-radius: 5px;
 	font-size: 1.6rem;
 	transition: background .4s, color .4s;
+
+	@include breakpoint-down(mobile) {
+		padding: 6px 10px;
+	}
 }
 
 .btn--green:hover {
@@ -44,6 +48,10 @@
 	padding: 9px 20px;
 	border-radius: 5px;
 	transition: background .4s, color .4s, border .4s;
+
+	@include breakpoint-down(mobile) {
+		padding: 7px 10px;
+	}
 }
 
 .btn--transparent:hover {
