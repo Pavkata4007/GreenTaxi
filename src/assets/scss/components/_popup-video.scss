@@ -1,0 +1,26 @@
+/* ------------------------------------------------------------ *\
+	popup-video
+\* ------------------------------------------------------------ */
+
+.popup-video {
+	opacity: 0;
+	width: 800px;
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	z-index: 20;
+	pointer-events: none;
+	transition: opacity .4s;
+	transform: translate(-50%, -50%);
+
+	video {
+		width: 100%;
+	}
+}
+
+.popup-video.is-active {
+	display: block;
+	opacity: 1;
+	pointer-events: all;
+}

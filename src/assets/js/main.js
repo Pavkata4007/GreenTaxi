@@ -8,3 +8,5 @@ import './polyfills/object-fit';
  */
 import './modules/calendar';
 import './modules/custom-select';
+import './modules/video-play-button';
+import './modules/popup';
