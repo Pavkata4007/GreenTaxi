@@ -4,16 +4,37 @@
 
 .form-trip {
 
+	@include breakpoint-down(tablet) {
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
 	.form__row {
 		display: flex;
+		position: relative;
+
+		@include breakpoint-down(small-desktop) {
+			margin: 0 -10px;
+		}
+
+		@include breakpoint-down(tablet) {
+			width: 100%;
+			flex-wrap: wrap;
+			margin: 0;
+		}
 	}
 
 	.form__row--alt {
 		background-color: $c-white;
 		padding: 5px 0 1px;
-		border-bottom-left-radius: 5px;
-		border-bottom-right-radius: 5px;
-		border-top-right-radius: 5px;
+		border-bottom-left-radius: 7px;
+		border-bottom-right-radius: 7px;
+		border-top-right-radius: 7px;
+
+		@include breakpoint-down(tablet) {
+			border-top-right-radius: 0;
+			padding: 5px 0 0;
+		}
 	}
 
 	.form__controls {
@@ -22,18 +43,35 @@
 	}
 
 	.form__controls--top-left {
-		border-top-left-radius: 5px;
+		border-top-left-radius: 7px;
+
+		@include breakpoint-down(tablet) {
+			max-width: 50%;
+			flex: 0 0 50%;
+			padding: 19px 15px;
+		}
 	}
 
 	.form__controls--top-right {
-		border-top-right-radius: 5px;
+		border-top-right-radius: 7px;
 		padding-right: 38px;
+
+		@include breakpoint-down(tablet) {
+			max-width: 50%;
+			flex: 0 0 50%;
+			padding: 19px 3px;
+		}
 	}
 
 	.form__controls--location {
 		width: 255px;
 		position: relative;
 		padding-bottom: 0;
+
+		@include breakpoint-down(tablet) {
+			padding: 19px 11px 12px;
+			width: 100%;
+		}
 	}
 
 	.form__controls--location:after {
@@ -45,6 +83,16 @@
 		top: 50%;
 		right: 0;
 		transform: translateY(-50%);
+
+		@include breakpoint-down(tablet) {
+			top: auto;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			transform: none;
+			height: 1px;
+			width: 100%;
+		}
 	}
 
 	.form__controls--location label {
@@ -58,6 +106,11 @@
 		width: 211px;
 		position: relative;
 		padding: 19px 24px 0;
+
+		@include breakpoint-down(tablet) {
+			padding: 19px 22px 10px;
+			width: 100%;
+		}
 	}
 
 	.form__controls--calendar span {
@@ -74,6 +127,16 @@
 		top: 50%;
 		right: 0;
 		transform: translateY(-50%);
+
+		@include breakpoint-down(tablet) {
+			top: auto;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			transform: none;
+			height: 1px;
+			width: 100%;
+		}
 	}
 
 	.form__controls--calendar label {
@@ -88,6 +151,10 @@
 
 	.form__controls--location-alt {
 		width: 228px;
+
+		@include breakpoint-down(tablet) {
+			width: 100%;
+		}
 	}
 
 	.form__controls--people label {
@@ -99,6 +166,16 @@
 	.form__controls--people {
 		padding: 19px 29px 0 23px;
 		position: relative;
+
+		@include breakpoint-down(tablet) {
+			width: 110px;
+			padding: 18px 19px 5px 27px;
+		}
+
+		@include breakpoint-down(mobile-small) {
+			width: 100px;
+			padding: 18px 9px 5px 27px;
+		}
 	}
 
 	.form__controls--people:after {
@@ -110,5 +187,42 @@
 		top: 50%;
 		right: 0;
 		transform: translateY(-50%);
+
+		@include breakpoint-down(tablet) {
+			display: none;
+		}
+	}
+
+	.form__controls--luggage label {
+		height: 18px;
+		width: 18px;
+		display: inline-block;
+	}
+
+	.form__controls--luggage {
+		padding: 19px 33px 0 24px;
+		position: relative;
+
+		@include breakpoint-down(tablet) {
+			width: 190px;
+			padding: 18px 13px 0 20px;
+		}
+	}
+
+	.form__icon {
+		position: absolute;
+		top: 22px;
+		right: 25px;
+		height: 18px;
+		width: 18px;
+
+		@include breakpoint-down(small-desktop) {
+			right: 30px;
+		}
+
+		@include breakpoint-down(tablet) {
+			right: 20px;
+			top: 20px;
+		}
 	}
 }

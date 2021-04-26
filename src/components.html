@@ -67,6 +67,8 @@
 									<input type="text" id="calendar" name="calendar" class="field-calendar" value="Sun, Mar 28">
 
 									<span>at</span>
+
+									<input type="text" id="time" name="time" class="field-time" value="18:00">
 								</div><!-- /.form_controls -->
 
 								<div class="form__controls form__controls--people">
@@ -96,6 +98,32 @@
 										<option value="10">10</option>
 									</select>
 								</div><!-- /.form__controls form__controls-/-people -->
+
+								<div class="form__controls form__controls--luggage">
+									<label for="luggage">
+										<img src="assets/images/svg/bag.svg" alt="">
+									</label>
+
+									<input type="text" id="luggage" name="luggage" class="field-luggage" value="2 Large, ">
+
+									<input type="text" id="luggage" name="luggage" class="field-luggage" value="1 Small">
+
+									<div class="form__icon">
+										<img src="assets/images/svg/angle-down.svg" alt="">
+									</div><!-- /.form__icon -->
+								</div><!-- /.form__controls form__controls-/-luggage -->
+
+								<div class="search">
+								    <form action="?" method="get">
+								        <label for="search" class="hidden"></label>
+
+								        <button type="submit" id="search" class="search__btn">
+											<img src="assets/images/svg/search.svg" alt="">
+								        </button>
+
+								        <input type="text" id="search" name="search" class="search__field" value="Search my journey">
+								    </form>
+								</div><!-- /.search -->
 							</div><!-- /.form__row -->
 						</form>
 					</div><!-- /.hero__form form-trip -->
@@ -339,7 +367,9 @@
 					<h3 style="background-image: url('assets/images/temp/image4.png');">Watch our <span>video</span> to see it works</h3>
 
 					<div class="section__media">
-						<video controls poster="assets/images/temp/image21.jpg">
+						<img src="assets/images/temp/image21.jpg" alt="">
+
+						<video controls>
 							<source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
 							<source src="movie.ogg" type="video/ogg">
 							Your browser does not support HTML video.
@@ -541,6 +571,10 @@
 				<source src="movie.ogg" type="video/ogg">
 				Your browser does not support HTML video.
 			</video>
+
+			<div class="popup__icon js-close-popup">
+				<img src="assets/images/svg/close.svg" alt="">
+			</div><!-- /.popup__icon -->
 		</div><!-- /.popup-video -->
 	</div><!-- /.wrapper -->
 

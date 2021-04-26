@@ -9,6 +9,10 @@
 	padding-top: 217px;
 	position: relative;
 
+	@include breakpoint-down(tablet) {
+		padding: 148px 0 83px;
+	}
+
 	&:after {
 		content: '';
 		position: absolute;
@@ -25,17 +29,30 @@
 		position: relative;
 		z-index: 2;
 		margin-bottom: 107px;
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 45px;
+		}
 	}
 
 	.hero__entry p {
 		font-size: 2rem;
 		font-weight: 400;
+
+		@include breakpoint-down(mobile) {
+			font-size: 1.6rem;
+		}
 	}
 
 	h1 {
 		font-weight: 500;
 		letter-spacing: -0.02em;
 		margin-bottom: 7px;
+
+		@include breakpoint-down(mobile) {
+			line-height: 1;
+			margin-bottom: 22px;
+		}
 	}
 
 	.hero__inner {

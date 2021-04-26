@@ -7,6 +7,7 @@ const btn = document.querySelector('.js-popup');
 const popup = document.querySelector('.js-popup-video');
 const video = popup.querySelector('video');
 const wrapper = document.querySelector('.wrapper');
+const close = document.querySelector('.js-close-popup');
 
 btn.addEventListener('click', function(evn) {
 	const target = evn.target;
@@ -26,6 +27,12 @@ btn.addEventListener('click', function(evn) {
 		    }
 		}
 	}
+
+	close.addEventListener('click', function(evn) {
+		popup.classList.remove('is-active');
+		wrapper.classList.remove('has-shadow');
+		video.pause();
+	});
 });
 
 /**

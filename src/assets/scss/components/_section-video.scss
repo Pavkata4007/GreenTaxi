@@ -42,6 +42,35 @@
 		position: relative;
 	}
 
+	.section__media img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 3;
+	}
+
+	.section__media.is-active img {
+		display: none;
+	}
+
+	.section__media.is-active:after {
+		display: none;
+	}
+
+	.section__media:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: $c-dark-green;
+		opacity: .2;
+		z-index: 4;
+	}
+
 	.section__play-btn {
 		position: absolute;
 		top: 50%;
@@ -51,7 +80,7 @@
 		width: 80px;
 		border-radius: 50%;
 		background-color: $c-dark-green;
-		z-index: 2;
+		z-index: 5;
 		cursor: pointer;
 	}
 

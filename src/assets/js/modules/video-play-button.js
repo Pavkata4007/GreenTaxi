@@ -12,5 +12,6 @@ btn.addEventListener('click', function(evn) {
 	const video = videoSection.querySelector('video');
 
 	btn.classList.add('is-hidden');
+	videoSection.classList.add('is-active');
 	video.play();
 })
