@@ -1,0 +1,89 @@
+/* ------------------------------------------------------------ *\
+	section-faq
+\* ------------------------------------------------------------ */
+
+.section-faq {
+	padding: 17px 0 48px;
+
+	.section__head {
+		text-align: center;
+		margin-bottom: 112px;
+	}
+
+	h3 {
+		font-weight: 500;
+		letter-spacing: -0.02em;
+		margin-bottom: 40px;
+	}
+
+	.section__nav ul {
+		display: flex;
+		justify-content: center;
+	}
+
+	.section__nav li + li {
+	}
+
+	.section__nav li {
+		list-style: none;
+	}
+
+	.section__nav li.is-active a {
+		background-color: $c-green;
+		border-radius: 25px;
+	}
+
+	.section__nav a {
+		padding: 10px 20px;
+		transition: opacity .4s;
+		text-decoration: none;
+		font-weight: 400;
+		font-size: 2rem;
+	}
+
+	.section__nav a:hover {
+		opacity: .6;
+	}
+
+	.section__content {
+		margin-bottom: 36px;
+		font-size: 1.6rem;
+		line-height: 1.33;
+		padding: 0 45px;
+	}
+
+	.section__content h5 {
+		font-weight: 500;
+		line-height: 1;
+		margin-bottom: 10px;
+	}
+
+	.section__content p {
+
+	}
+
+	.section__body {
+		margin-bottom: 55px;
+	}
+
+	.section__footer {
+		text-align: center;
+		font-size: 1.8rem;
+	}
+
+	.section__footer p {
+		margin-bottom: 23px;
+	}
+
+	.section__footer  a {
+		color: #595959;
+		font-size: 2rem;
+		font-weight: 400;
+		transition: opacity .4s;
+	}
+
+	.section__footer  a:hover {
+		opacity: .7;
+	}
+}
+
