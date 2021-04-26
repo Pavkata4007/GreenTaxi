@@ -21,6 +21,7 @@
 
 	.section__actions a {
 		text-decoration: none;
+		color: $c-black;
 		transition: opacity .4s, color .4s;
 	}
 

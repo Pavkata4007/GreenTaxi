@@ -15,9 +15,6 @@ btn.addEventListener('click', function(evn) {
 	video.play();
 	wrapper.classList.add('has-shadow');
 
-		console.log(target)
-		console.log(btn)
-
 	if( popup.classList.contains('is-active') ) {
 
 		document.onkeydown = function(e) {
@@ -28,7 +25,22 @@ btn.addEventListener('click', function(evn) {
 				video.pause();
 		    }
 		}
-
 	}
 });
 
+/**
+ * On click outside of the popup, to close it.
+ *
+ * @param  {Event} e
+ * @return {Void}
+ */
+wrapper.addEventListener('click', function(e) {
+
+	const target = e.target;
+
+	if ( target !== (popup) && target !== (btn)) {
+		popup.classList.remove('is-active');
+		wrapper.classList.remove('has-shadow');
+		video.pause();
+	}
+})

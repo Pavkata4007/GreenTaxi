@@ -42,6 +42,7 @@
 		font-size: 1.8rem;
 		text-decoration: none;
 		font-weight: 400;
+		color: $c-black;
 		transition: color .4s;
 
 		@include breakpoint-down(mobile-medium) {
