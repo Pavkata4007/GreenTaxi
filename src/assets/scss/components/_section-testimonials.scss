@@ -7,18 +7,49 @@
 	background-color: $c-dark-green;
 	position: relative;
 
+	@include breakpoint-down(mobile) {
+		padding-bottom: 132px;
+	}
+
 	.section__icon {
 		position: absolute;
 		bottom: 0;
 		right: 0;
+		z-index: 0;
 	}
 
 	.section__entry {
 		display: flex;
+
+		@include breakpoint-down(mobile) {
+			display: block;
+		}
 	}
 
 	.section__quote {
 		max-width: 120px;
 		flex: 0 0 120px;
+
+		@include breakpoint-down(mobile) {
+			max-width: 80px;
+			margin-left: 35px;
+		}
+	}
+
+	.section__grid {
+		position: relative;
+		z-index: 2;
+
+		@include breakpoint-down(mobile) {
+
+		}
+	}
+
+	.section__col {
+
+		@include breakpoint-down(mobile) {
+			max-width: 100%;
+			flex: 0 0 100%;
+		}
 	}
 }

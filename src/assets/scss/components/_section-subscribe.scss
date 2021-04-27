@@ -5,23 +5,68 @@
 .section-subscribe {
 	padding: 20px 0;
 
+	@include breakpoint-down(tablet) {
+		padding: 32px 25px;
+	}
+
 	h3 {
 		font-weight: 500;
 		letter-spacing: -0.02em;
 		margin-bottom: 54px;
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 58px;
+		}
 	}
 
 	.section__content {
 		max-width: 400px;
 		margin: 0 199px 9px auto;
+
+		@include breakpoint-down(large-desktop) {
+			margin: 0 70px 0 auto;
+		}
+
+		@include breakpoint-down(tablet) {
+			margin: 0 auto 50px;
+		}
 	}
 
 	.section__grid {
 		align-items: center;
+
+		@include breakpoint-down(tablet) {
+
+		}
+	}
+
+	.section__col {
+
+		@include breakpoint-down(tablet) {
+			max-width: 100%;
+			flex: 0 0 100%;
+		}
 	}
 
 	.section__image img {
 		max-width: unset;
 		float: left;
+
+		@include breakpoint-down(tablet) {
+			float: unset;
+			max-width: 100%;
+
+		}
+
+		@include breakpoint-down(mobile) {
+			display: block;
+		}
+	}
+
+	.section__image {
+
+		@include breakpoint-down(mobile-medium) {
+			margin: 0 -150px;
+		}
 	}
 }

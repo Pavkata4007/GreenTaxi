@@ -8,11 +8,31 @@
 		display: flex;
 		flex-wrap: wrap;
 		margin: 0 -20px;
+
+		@include breakpoint-down(mobile) {
+			margin: 0 -10px;
+		}
 	}
 
 	.blogs__item {
 		max-width: 33.33%;
 		flex: 0 0 33.33%;
 		padding: 0 20px;
+
+		@include breakpoint-down(tablet) {
+			max-width: 50%;
+			flex: 0 0 50%;
+			margin-bottom: 40px;
+		}
+
+		@include breakpoint-down(mobile) {
+			padding: 0 10px;
+			margin-bottom: 20px;
+		}
+
+		@include breakpoint-down(mobile-medium) {
+			max-width: 100%;
+			flex: 0 0 100%;
+		}
 	}
 }

@@ -6,14 +6,66 @@
 	background-color: #FBFBFB;
 	padding: 50px 0 55px;
 
+	@include breakpoint-down(mobile) {
+		padding: 33px 0;
+	}
+
 	.section__grid {
 		padding: 0 27px;
 		align-items: center;
+
+		@include breakpoint-down(small-desktop) {
+			padding: 0;
+			margin: 0 -10px;
+		}
+
+		@include breakpoint-down(mobile) {
+			flex-direction: column-reverse;
+			padding: 0 10px;
+		}
+	}
+
+	.section__actions {
+
+		@include breakpoint-down(mobile) {
+			display: none;
+		}
+	}
+
+	.section__actions-alt {
+		display: none;
+
+		@include breakpoint-down(mobile) {
+			display: block;
+			margin: 0 auto;
+			text-align: center;
+		}
+	}
+
+	.section__actions-alt a {
+		font-size: 1.6rem;
+		padding: 9px 15px;
+	}
+
+	.section__col {
+
+		@include breakpoint-down(mobile) {
+			max-width: 100%;
+			flex: 0 0 100%;
+		}
 	}
 
 	.section__image {
 		padding: 0 93px 50px 0;
 		position: relative;
+
+		@include breakpoint-down(small-desktop) {
+			padding: 0 10px;
+		}
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 72px;
+		}
 	}
 
 	.section__image img {
@@ -29,9 +81,14 @@
 		bottom: 18px;
     	left: -22px;
 		background-color: $c-green;
-		height: 296px;
-		width: 520px;
+		height: 83%;
+		width: 84%;
 		border-radius: 5px;
+
+		@include breakpoint-down(small-desktop) {
+			bottom: -20px;
+			left: 0;
+		}
 	}
 
 	h3 {
@@ -44,6 +101,15 @@
 		padding-right: 60px;
 		font-size: 2rem;
 		font-weight: 400;
+
+		@include breakpoint-down(small-desktop) {
+			padding: 0 10px;
+		}
+
+		@include breakpoint-down(mobile) {
+			font-size: 1.6rem;
+			margin-bottom: 59px;
+		}
 	}
 
 	p {

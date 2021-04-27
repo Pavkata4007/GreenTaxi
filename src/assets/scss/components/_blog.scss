@@ -26,12 +26,27 @@
 		color: #808080;
 		font-size: 1.6em;
 		font-weight: 400;
+
+		@include breakpoint-down(mobile) {
+			font-size: 1.4rem;
+		}
 	}
 
 	.blog__content p {
 		color: #808080;
 		line-height: 1.6;
 		font-size: 1.6rem;
+
+		@include breakpoint-down(mobile) {
+			font-size: 1.4rem;
+		}
+	}
+
+	.blog__content {
+
+		@include breakpoint-down(tablet) {
+			max-width: 420px;
+		}
 	}
 
 	.blog__content h3 {

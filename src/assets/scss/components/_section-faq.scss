@@ -5,20 +5,44 @@
 .section-faq {
 	padding: 17px 0 48px;
 
+	@include breakpoint-down(mobile) {
+		padding: 32px 0;
+	}
+
 	.section__head {
 		text-align: center;
 		margin-bottom: 112px;
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 36px;
+		}
 	}
 
 	h3 {
 		font-weight: 500;
 		letter-spacing: -0.02em;
 		margin-bottom: 40px;
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 43px;
+		}
 	}
 
 	.section__nav ul {
 		display: flex;
 		justify-content: center;
+
+		@include breakpoint-down(mobile-medium) {
+			flex-wrap: wrap;
+		}
+	}
+
+	.section__col {
+
+		@include breakpoint-down(mobile) {
+			max-width: 100%;
+			flex: 0 0 100%;
+		}
 	}
 
 	.section__nav li + li {
@@ -26,6 +50,12 @@
 
 	.section__nav li {
 		list-style: none;
+
+		@include breakpoint-down(mobile-medium) {
+			max-width: 50%;
+			flex: 0 0 50%;
+			margin-bottom: 25px;
+		}
 	}
 
 	.section__nav li.is-active a {
@@ -40,6 +70,10 @@
 		font-weight: 400;
 		color: $c-black;
 		font-size: 2rem;
+
+		@include breakpoint-down(mobile) {
+			font-size: 1.8rem;
+		}
 	}
 
 	.section__nav a:hover {
@@ -51,16 +85,31 @@
 		font-size: 1.6rem;
 		line-height: 1.33;
 		padding: 0 45px;
+
+		@include breakpoint-down(mobile) {
+			padding: 0 10px;
+			line-height: 1.19;
+			margin-bottom: 37px;
+		}
 	}
 
 	.section__content h5 {
 		font-weight: 500;
 		line-height: 1;
 		margin-bottom: 10px;
+
+		@include breakpoint-down(mobile) {
+			letter-spacing: -0.02em;
+			margin-bottom: 12px;
+		}
 	}
 
 	.section__body {
 		margin-bottom: 55px;
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 11px;
+		}
 	}
 
 	.section__footer {

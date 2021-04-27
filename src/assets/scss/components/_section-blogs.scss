@@ -5,6 +5,10 @@
 .section-blogs {
 	padding: 17px 0;
 
+	@include breakpoint-down(tablet) {
+		padding: 30px 0;
+	}
+
 	.section__title {
 		text-align: center;
 		font-weight: 500;
@@ -32,5 +36,9 @@
 
 	.section__blogs {
 		margin-bottom: 76px;
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 30px;
+		}
 	}
 }

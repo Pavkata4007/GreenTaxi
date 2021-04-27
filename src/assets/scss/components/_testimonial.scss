@@ -8,19 +8,53 @@
 	padding: 30px;
 	font-size: 1.6rem;
 
+	@include breakpoint-down(tablet) {
+		padding: 15px;
+	}
+
+	@include breakpoint-down(mobile) {
+		padding: 25px 20px;
+	}
+
 	h6 {
 		font-weight: 400;
 		margin-bottom: 20px;
+
+		@include breakpoint-down(tablet) {
+			margin-bottom: 15px;
+		}
+
+		@include breakpoint-down(mobile) {
+			color: $c-black;
+		}
 	}
 
 	p {
 		padding-right: 20px;
+
+		@include breakpoint-down(tablet) {
+			padding-right: 0;
+		}
 	}
 
 	.testimonial__image {
 		margin-bottom: 14px;
 		max-width: 54px;
 		flex: 0 0 54px;
+
+		@include breakpoint-down(mobile) {
+			max-width: 44px;
+			flex: 0 0 44px;
+			margin-bottom: 15px;
+		}
+	}
+
+	.testimonial__content {
+
+		@include breakpoint-down(mobile) {
+			font-size: 1.4rem;
+			color: #808080;
+		}
 	}
 }
 
@@ -28,6 +62,16 @@
 	max-width: 350px;
 	margin: 104px 0 0 100px;
 	padding-bottom: 56px;
+
+	@include breakpoint-down(small-desktop) {
+		margin: 50px 20px 0;
+	}
+
+	@include breakpoint-down(mobile) {
+		margin: 28px 9px 0;
+		max-width: 228px;
+		padding-bottom: 25px;
+	}
 }
 
 .testimonial--top {
@@ -36,8 +80,23 @@
 	display: flex;
 	padding-bottom: 52px;
 
+	@include breakpoint-down(large-desktop) {
+		margin-left: 0;
+	}
+
+	@include breakpoint-down(mobile) {
+		max-width: 228px;
+		padding-bottom: 25px;
+		display: block;
+		margin: 25px auto;
+	}
+
 	.testimonial__content {
 		margin-left: 16px;
+
+		@include breakpoint-down(mobile) {
+			margin-left: 0;
+		}
 	}
 
 	p {
@@ -51,11 +110,41 @@
 	display: flex;
 	padding-bottom: 44px;
 
+	@include breakpoint-down(small-desktop) {
+		margin: 20px 0 0;
+	}
+
+	@include breakpoint-down(mobile) {
+		max-width: 228px;
+		padding-bottom: 25px;
+		display: block;
+		position: absolute;
+		top: 59px;
+		right: 0;
+	}
+
+	@include breakpoint-down(mobile-medium) {
+    	opacity: .5;
+    	right: -159px;
+	}
+
+	@include breakpoint-down(mobile-small) {
+		right: -180px;
+	}
+
 	.testimonial__content {
 		margin-left: 16px;
+
+		@include breakpoint-down(mobile) {
+			margin-left: 0;
+		}
 	}
 
 	h6 {
 		padding-top: 5px;
+
+		@include breakpoint-down(mobile) {
+			padding-top: 0;
+		}
 	}
 }

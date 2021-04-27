@@ -6,6 +6,10 @@
 
 	.subscribe__inner {
 		max-width: 340px;
+
+		@include breakpoint-down(mobile) {
+			max-width: 290px;
+		}
 	}
 
 	.subscribe__field {
@@ -17,12 +21,20 @@
 		color: #808080;
 		width: 100%;
 		margin-bottom: 24px;
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 19px;
+		}
 	}
 
 	.subscribe__btn {
 		display: block;
 		width: 100%;
 		margin-bottom: 11px;
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 22px;
+		}
 	}
 
 	.subscribe__meta {

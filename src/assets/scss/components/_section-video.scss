@@ -6,8 +6,24 @@
 	padding: 48px 0;
 	position: relative;
 
+	@include breakpoint-down(tablet) {
+		padding: 150px 0 194px;
+	}
+
+	.section__inner {
+
+		@include breakpoint-down(mobile) {
+			padding: 0 10px;
+		}
+	}
+
 	.section__icon {
 		position: absolute;
+		z-index: -1;
+
+		@include breakpoint-down(mobile) {
+			max-width: 260px;
+		}
 	}
 
 	.section__icon--top {
@@ -30,6 +46,15 @@
     	max-width: 560px;
     	margin: 0 auto 48px;
     	border-radius: 5px;
+
+    	@include breakpoint-down(mobile) {
+    		padding: 22px 12px 14px 14px;
+    		line-height: 1;
+    	}
+
+    	@include breakpoint-down(mobile-medium) {
+    		text-align: left;
+    	}
 	}
 
 	h3 span {
@@ -40,6 +65,11 @@
 		max-width: 630px;
 		margin: 0 auto 47px;
 		position: relative;
+
+		@include breakpoint-down(mobile-medium) {
+			max-width: 271px;
+			margin-bottom: 46px;
+		}
 	}
 
 	.section__media img {
@@ -82,6 +112,11 @@
 		background-color: $c-dark-green;
 		z-index: 5;
 		cursor: pointer;
+
+		@include breakpoint-down(mobile-medium) {
+			height: 60px;
+			width: 60px;
+		}
 	}
 
 	.section__play-btn img {
@@ -105,5 +140,11 @@
 	.section__content {
 		font-size: 2rem;
 		text-align: center;
+
+		@include breakpoint-down(mobile) {
+			font-size: 1.8rem;
+			max-width: 260px;
+			margin: 0 auto;
+		}
 	}
 }

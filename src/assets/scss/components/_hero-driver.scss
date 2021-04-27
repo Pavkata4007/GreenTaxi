@@ -9,6 +9,10 @@
 	background-position: center;
 	position: relative;
 
+	@include breakpoint-down(mobile) {
+		padding-top: 150px;
+	}
+
 	&:after {
 		content: '';
 		position: absolute;
