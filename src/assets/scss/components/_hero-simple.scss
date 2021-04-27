@@ -7,6 +7,11 @@
 	background-color: $c-dark-green;
 	padding: 51px 0;
 
+	@include breakpoint-down(mobile) {
+		height: 200px;
+		padding: 24px 0;
+	}
+
 	.hero__shell {
 		height: 100%;
 	}

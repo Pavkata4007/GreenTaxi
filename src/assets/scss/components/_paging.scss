@@ -1,0 +1,55 @@
+/* ------------------------------------------------------------ *\
+	paging
+\* ------------------------------------------------------------ */
+
+.paging {
+	margin-bottom: 73px;
+
+	ul {
+		display: flex;
+		justify-content: center;
+	}
+
+	li {
+		list-style: none;
+		height: 50px;
+		width: 50px;
+		border: 1px solid $c-dark-green;
+		border-radius: 5px;
+		position: relative;
+		transition: background .4s;
+
+		@include breakpoint-down(mobile-medium) {
+			height: 30px;
+			width: 30px;
+		}
+	}
+
+	li + li {
+		margin-left: 13px;
+
+		@include breakpoint-down(mobile-small) {
+			margin-left: 5px;
+		}
+	}
+
+	a {
+		display: block;
+		color: $c-dark-green;
+		text-decoration: none;
+		font-size: 2.4rem;
+		font-weight: 400;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+
+		@include breakpoint-down(mobile-medium) {
+			font-size: 1.6rem;
+		}
+	}
+
+	li:hover {
+		background-color: $c-green;
+	}
+}

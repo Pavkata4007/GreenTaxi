@@ -45,7 +45,7 @@
 	}
 
 	h3 {
-		font-size: 54px;
+		font-size: 5.4rem;
 		color: $c-white;
 		line-height: 1;
 		max-width: 835px;
@@ -54,6 +54,11 @@
 		text-align: center;
 		position: relative;
 		z-index: 2;
+
+		@include breakpoint-down(mobile) {
+			font-size: 3.6rem;
+			margin: 0 auto 39px;
+		}
 	}
 
 	.section__actions {
@@ -64,7 +69,16 @@
 .section-booking--alt {
 	padding: 24px 0 78px;
 
+	@include breakpoint-down(mobile) {
+		padding: 24px 0 70px;
+	}
+
 	.section__inner {
     	padding: 122px 0 125px;
+
+    	@include breakpoint-down(mobile) {
+    		padding: 203px 20px 206px;
+    	}
 	}
+
 }

@@ -1,0 +1,25 @@
+/* ------------------------------------------------------------ *\
+	blogs-alt
+\* ------------------------------------------------------------ */
+
+.blogs-alt {
+
+	.blogs__items {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -30px;
+	}
+
+	.blogs__item {
+		max-width: 50%;
+		flex: 0 0 50%;
+		padding: 0 30px;
+		margin-bottom: 57px;
+
+		@include breakpoint-down(mobile) {
+			max-width: 100%;
+			flex: 0 0 100%;
+			margin-bottom: 50px;
+		}
+	}
+}

@@ -5,13 +5,14 @@
  */
 const btn = document.querySelector('.js-play');
 
-btn.addEventListener('click', function(evn) {
+if (typeof(btn) != 'undefined' && btn != null) {
+	btn.addEventListener('click', function(evn) {
+		const target = evn.target;
+		const videoSection = btn.previousElementSibling;
+		const video = videoSection.querySelector('video');
 
-	const target = evn.target;
-	const videoSection = btn.previousElementSibling;
-	const video = videoSection.querySelector('video');
-
-	btn.classList.add('is-hidden');
-	videoSection.classList.add('is-active');
-	video.play();
-})
+		btn.classList.add('is-hidden');
+		videoSection.classList.add('is-active');
+		video.play();
+	})
+}

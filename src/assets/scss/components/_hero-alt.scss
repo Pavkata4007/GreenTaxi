@@ -1,0 +1,53 @@
+/* ------------------------------------------------------------ *\
+	hero-alt
+\* ------------------------------------------------------------ */
+
+.hero-alt {
+	background-color: $c-dark-green;
+	height: 520px;
+	padding-top: 200px;
+
+	@include breakpoint-down(mobile) {
+		padding: 154px 0 20px;
+	}
+
+	@include breakpoint-down(mobile-medium) {
+		min-height: 567px;
+		height: unset;
+	}
+
+	.hero__inner {
+		max-width: 784px;
+		margin: 0 auto;
+		text-align: center;
+
+		@include breakpoint-down(mobile-medium) {
+			max-width: 310px;
+		}
+	}
+
+	h3 {
+		letter-spacing: -0.02em;
+		font-weight: 500;
+		color: $c-white;
+		margin-bottom: 63px;
+
+		@include breakpoint-down(mobile) {
+			line-height: 1;
+			margin-bottom: 42px;
+		}
+
+		@include breakpoint-down(mobile-medium) {
+			/* padding: 0 38px; */
+
+		}
+	}
+
+	.hero__nav {
+		margin-bottom: 51px;
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 33px;
+		}
+	}
+}

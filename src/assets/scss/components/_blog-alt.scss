@@ -1,0 +1,128 @@
+/* ------------------------------------------------------------ *\
+	blog-alt
+\* ------------------------------------------------------------ */
+
+.blog-alt {
+	margin: 0 -10px 54px;
+
+	@include breakpoint-down(mobile) {
+		margin-bottom: 64px;
+	}
+
+	a {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		text-decoration: none;
+		font-weight: 400;
+	}
+
+	.blog__image {
+		max-width: 62%;
+		flex: 0 0 62%;
+		padding: 0 10px;
+
+		@include breakpoint-down(tablet) {
+			max-width: 100%;
+			flex: 0 0 100%;
+			margin-bottom: 20px;
+		}
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 8px;
+		}
+	}
+
+	.blog__image img {
+		border-radius: 12px;
+	}
+
+	.blog__content {
+		max-width: 38%;
+		flex: 0 0 38%;
+		padding: 0 60px 0 10px;
+		font-size: 1.6rem;
+		color: #808080;
+		line-height: 1.6;
+		margin-bottom: 7px;
+
+		@include breakpoint-down(tablet) {
+			max-width: 100%;
+			flex: 0 0 100%;
+		}
+
+		@include breakpoint-down(mobile) {
+			padding: 0 10px 0 20px;
+			font-size: 1.45rem;
+			line-height: 1.4;
+		}
+	}
+
+	.blog__title {
+		display: flex;
+		align-items: center;
+	}
+
+	.blog__title img {
+		max-width: 60px;
+		flex: 0 0 60px;
+		border-radius: 50%;
+
+		@include breakpoint-down(mobile) {
+			max-width: 44px;
+			flex: 0 0 44px;
+		}
+	}
+
+	span {
+		color: #808080;
+		font-size: 1.8rem;
+		display: block;
+		margin-bottom: 14px;
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 11px;
+		}
+	}
+
+	p {
+		margin-bottom: 25px;
+	}
+
+	span em {
+		font-style: normal;
+	}
+
+	h3 {
+		line-height: 1;
+		letter-spacing: -0.02em;
+		font-weight: 500;
+		color: $c-black;
+		margin-bottom: 11px;
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 13px;
+		}
+	}
+
+	.blog__name {
+		margin-left: 12px;
+	}
+
+	.blog__name strong {
+		display: block;
+		color: #6E6E6E;
+		letter-spacing: -0.02em;
+		font-size: 1.8rem;
+		font-weight: 500;
+		margin-bottom: 0px;
+		line-height: 1.2;
+	}
+
+	.blog__name small {
+		display: block;
+		font-weight: 400;
+		font-size: 1.6rem;
+		color: #6E6E6E;
+	}
+}

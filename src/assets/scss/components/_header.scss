@@ -66,11 +66,23 @@
 .header--alt {
 	padding: 34px 0;
 
+	@include breakpoint-down(mobile) {
+		padding: 50px 0;
+	}
+
 	.header__logo {
 		margin-bottom: 0;
+
+		@include breakpoint-down(mobile) {
+			max-width: 144px;
+		}
 	}
 
 	.header__actions {
 		margin-right: 34px;
+
+		@include breakpoint-down(mobile) {
+			margin-right: 0;
+		}
 	}
 }

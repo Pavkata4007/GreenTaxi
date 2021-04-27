@@ -1,0 +1,62 @@
+/* ------------------------------------------------------------ *\
+	section
+\* ------------------------------------------------------------ */
+
+.section {
+
+	.section__head {
+		margin-top: -390px;
+		position: relative;
+		padding-bottom: 16px;
+	}
+
+	.section__head:after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		height: 1px;
+		width: 852px;
+		background-color: #C7C7C7;
+	}
+
+	.section__head a {
+		font-size: 2rem;
+		color: $c-white;
+		font-weight: 400;
+		margin-bottom: 37px;
+		text-decoration: none;
+		display: block;
+		transition: color .4s;
+	}
+
+	.section__head a:hover {
+		color: $c-green;
+	}
+
+	.section__head img {
+		display: block;
+		margin-bottom: 20px;
+		border-radius: 15px;
+	}
+
+	.section__title img {
+		display: inline-block;
+		height: 32px;
+		width: 32px;
+		margin: 0 5px 0 0;
+	}
+
+	.section__title {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.section__title strong {
+		font-size: 1.8rem;
+		font-weight: 400;
+		margin: 0 58px;
+	}
+}

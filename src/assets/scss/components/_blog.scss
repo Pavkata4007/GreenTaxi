@@ -4,8 +4,17 @@
 
 .blog {
 
+	a {
+		font-weight: 400;
+		text-decoration: none;
+	}
+
 	.blog__image {
 		margin-bottom: 17px;
+	}
+
+	.blog__image img {
+		border-radius: 12px;
 	}
 
 	.blog__title {
@@ -20,6 +29,7 @@
 
 	.blog__title img {
 		margin-right: 2px;
+		border-radius: 50%;
 	}
 
 	.blog__title span {
@@ -55,5 +65,40 @@
 		letter-spacing: -0.02em;
 		color: $c-black;
 		line-height: 1;
+	}
+}
+
+.blog--alt {
+
+	.blog__image {
+		margin-bottom: 12px;
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 8px;
+		}
+	}
+
+	.blog__content {
+
+		@include breakpoint-down(mobile) {
+			padding: 0 10px 0 20px;
+			font-size: 1.45rem;
+			line-height: 1.4;
+		}
+	}
+
+	.blog__title {
+		align-items: center;
+		margin-bottom: 26px;
+
+		@include breakpoint-down(mobile) {
+			display: block;
+			margin-bottom: 12px;
+		}
+	}
+
+	strong span {
+		vertical-align: middle;
+		margin: 0 5px;
 	}
 }

@@ -1,0 +1,11 @@
+/* ------------------------------------------------------------ *\
+	section-blogs-alt
+\* ------------------------------------------------------------ */
+
+.section-blogs-alt {
+	padding: 48px 0 5px;
+
+	@include breakpoint-down(mobile) {
+		padding: 26px 10px 0;
+	}
+}

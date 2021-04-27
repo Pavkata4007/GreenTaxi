@@ -4,50 +4,54 @@
  *
  */
 const btn = document.querySelector('.js-popup');
-const popup = document.querySelector('.js-popup-video');
-const video = popup.querySelector('video');
-const wrapper = document.querySelector('.wrapper');
-const close = document.querySelector('.js-close-popup');
 
-btn.addEventListener('click', function(evn) {
-	const target = evn.target;
+if (typeof(btn) != 'undefined' && btn != null) {
+	const popup = document.querySelector('.js-popup-video');
+	const video = popup.querySelector('video');
+	const wrapper = document.querySelector('.wrapper');
+	const close = document.querySelector('.js-close-popup');
 
-	popup.classList.add('is-active');
-	video.play();
-	wrapper.classList.add('has-shadow');
+	btn.addEventListener('click', function(evn) {
+		const target = evn.target;
 
-	if( popup.classList.contains('is-active') ) {
+		popup.classList.add('is-active');
+		video.play();
+		wrapper.classList.add('has-shadow');
 
-		document.onkeydown = function(e) {
+		if( popup.classList.contains('is-active') ) {
 
-			if(e.key === "Escape") {
-		        popup.classList.remove('is-active');
-				wrapper.classList.remove('has-shadow');
-				video.pause();
-		    }
+			document.onkeydown = function(e) {
+
+				if(e.key === "Escape") {
+			        popup.classList.remove('is-active');
+					wrapper.classList.remove('has-shadow');
+					video.pause();
+			    }
+			}
 		}
-	}
 
-	close.addEventListener('click', function(evn) {
-		popup.classList.remove('is-active');
-		wrapper.classList.remove('has-shadow');
-		video.pause();
+		close.addEventListener('click', function(evn) {
+			popup.classList.remove('is-active');
+			wrapper.classList.remove('has-shadow');
+			video.pause();
+		});
 	});
-});
 
-/**
- * On click outside of the popup, to close it.
- *
- * @param  {Event} e
- * @return {Void}
- */
-wrapper.addEventListener('click', function(e) {
+	/**
+	 * On click outside of the popup, to close it.
+	 *
+	 * @param  {Event} e
+	 * @return {Void}
+	 */
 
-	const target = e.target;
+	wrapper.addEventListener('click', function(e) {
 
-	if ( target !== (popup) && target !== (btn)) {
-		popup.classList.remove('is-active');
-		wrapper.classList.remove('has-shadow');
-		video.pause();
-	}
-})
+		const target = e.target;
+
+		if ( target !== (popup) && target !== (btn)) {
+			popup.classList.remove('is-active');
+			wrapper.classList.remove('has-shadow');
+			video.pause();
+		}
+	})
+}
