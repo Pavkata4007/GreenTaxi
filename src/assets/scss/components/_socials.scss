@@ -4,11 +4,38 @@
 
 .socials {
 
+	span {
+		display: none;
+		font-size: 1.6rem;
+		margin-bottom: 25px;
+
+		@include breakpoint-down(mobile) {
+			display: block;
+		}
+	}
+
+	ul {
+
+		@include breakpoint-down(mobile) {
+			display: flex;
+			justify-content: center;
+		}
+	}
+
 	li {
 		list-style: none;
+		transition: opacity .4s;
+	}
+
+	li:hover {
+		opacity: .6;
 	}
 
 	li + li {
-		margin-top: 20px;
+		margin-top: 30px;
+
+		@include breakpoint-down(mobile) {
+			margin: 0 0 0 24px;
+		}
 	}
 }

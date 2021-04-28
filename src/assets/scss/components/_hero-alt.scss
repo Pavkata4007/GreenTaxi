@@ -51,3 +51,15 @@
 		}
 	}
 }
+
+.hero-alt--alt {
+
+	@include breakpoint-down(mobile) {
+		height: 320px;
+	}
+
+	@include breakpoint-down(mobile-medium) {
+		height: 320px;
+		min-height: unset;
+	}
+}
