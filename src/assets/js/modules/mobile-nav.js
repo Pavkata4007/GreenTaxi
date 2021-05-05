@@ -8,10 +8,14 @@ const mobileNav = document.querySelector('.js-mobile-nav');
 const body = document.querySelector('body');
 const headerContent = document.querySelector('.header .header__content');
 
-mobileNav.addEventListener('click', function() {
+if (typeof(mobileNav) != 'undefined' && mobileNav != null) {
 
-	mobileNav.classList.toggle('mobile-nav--active');
-	body.classList.toggle('is-fixed');
-	headerContent.classList.toggle('is-active');
-});
+	mobileNav.addEventListener('click', function() {
+
+		mobileNav.classList.toggle('mobile-nav--active');
+		body.classList.toggle('is-fixed');
+		headerContent.classList.toggle('is-active');
+	});
+}
+
 

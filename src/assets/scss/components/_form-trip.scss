@@ -200,13 +200,21 @@
 	}
 
 	.form__controls--luggage {
+		cursor: pointer;
 		padding: 19px 33px 0 24px;
 		position: relative;
+		width: 200px;
 
 		@include breakpoint-down(tablet) {
 			width: 190px;
 			padding: 18px 13px 0 20px;
 		}
+	}
+
+	.form__controls--luggage em {
+		font-style: normal;
+		font-size: 1.6rem;
+		vertical-align: middle;
 	}
 
 	.form__icon {
@@ -224,5 +232,14 @@
 			right: 20px;
 			top: 20px;
 		}
+	}
+
+	.form__luggage {
+		opacity: 0;
+		transition: opacity .5s;
+	}
+
+	.form__luggage.is-active {
+		opacity: 1;
 	}
 }

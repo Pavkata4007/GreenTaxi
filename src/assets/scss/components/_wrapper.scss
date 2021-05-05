@@ -8,6 +8,11 @@
 	overflow: hidden;
 }
 
+.wrapper--alt {
+	overflow: visible;
+}
+
+
 .wrapper.has-shadow {
 
 	&:after {
@@ -20,5 +25,4 @@
 		background: rgba(0, 0, 0, .7);
 		z-index: 5;
 	}
-
 }

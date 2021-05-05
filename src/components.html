@@ -104,13 +104,54 @@
 										<img src="assets/images/svg/bag.svg" alt="">
 									</label>
 
-									<input type="text" id="luggage" name="luggage" class="field-luggage" value="2 Large, ">
+									<input type="text" id="luggage-large" name="luggage" class="field-luggage" value="2">
 
-									<input type="text" id="luggage" name="luggage" class="field-luggage" value="1 Small">
+									<em>Large, </em>
+
+									<input type="text" id="luggage-small" name="luggage" class="field-luggage" value="1">
+
+									<em>Small</em>
 
 									<div class="form__icon">
 										<img src="assets/images/svg/angle-down.svg" alt="">
 									</div><!-- /.form__icon -->
+
+									<div class="luggage form__luggage">
+										<small>Select your luggage</small>
+
+										<div class="luggage__row luggage__large">
+											<strong>
+												<img src="assets/images/svg/large-bag.svg" alt="">
+
+												Large bag
+											</strong>
+
+											<strong>
+												<span class="luggage__minus minus js-minus">-</span>
+
+												<input type="text" class="field-coutner js-large" value='2'>
+
+												<span class="plus js-plus">+</span>
+											</strong>
+										</div><!-- /.luggage__row -->
+
+										<div class="luggage__row luggage__small">
+											<strong>
+												<img src="assets/images/svg/bag.svg" alt="">
+
+												Small bag
+											</strong>
+
+											<strong>
+												<span class="luggage__minus minus js-minus">-</span>
+
+												<input type="text" class="field-coutner js-small" value='1'>
+
+												<span class="plus js-plus">+</span>
+											</strong>
+										</div><!-- /.luggage__row -->
+
+									</div><!-- /.luggage form__luggage -->
 								</div><!-- /.form__controls form__controls-/-luggage -->
 
 								<div class="search">

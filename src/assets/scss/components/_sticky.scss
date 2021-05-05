@@ -1,10 +1,12 @@
 /* ------------------------------------------------------------ *\
-	field-luggage
+	sticky
 \* ------------------------------------------------------------ */
 
-.field-luggage {
-	width: 13px;
-	border: none;
-	font-size: 1.6rem;
-	vertical-align: middle;
+.sticky {
+
+	ul {
+		position: -webkit-sticky;
+		position: sticky;
+		top: 30px;
+	}
 }
