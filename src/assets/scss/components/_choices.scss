@@ -42,21 +42,35 @@
 
 	.choices__list {
 		font-size: 1.6rem;
-		max-width: 56px;
 		overflow: hidden;
 		border-radius: 5px;
 		overflow-y: auto;
 		max-height: unset;
+	}
+
+	.choices__inner .choices__list {
 		margin-top: -12px;
+
+	}
+
+	.choices__list {
+		padding-top: 6px;
+		width: 56px;
+		max-width: unset;
 	}
 
 	.choices__list--dropdown {
-		max-width: 56px;
-		padding-top: 10px;
+		margin-top: 7px;
+		left: -25px;
 	}
 
-	.choices__list--single {
-
+	.choices__list--dropdown .choices__item {
+		font-size: 1.8rem;
+	}
+.choices__list--dropdown .choices__item--selectable {
+		padding-left: 0;
+		padding-right: 0;
+		text-align: center;
 	}
 }
 

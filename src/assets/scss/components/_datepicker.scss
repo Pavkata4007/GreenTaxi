@@ -4,16 +4,18 @@
 
 .datepicker {
 	width: 242px;
-	padding: 35px;
+	padding: 28px 17px 28px 31px;
 	background-color: $c-white;
 	border-radius: 5px;
 	position: absolute;
-	top: 600px;
-	left: 50%;
+	top:  600px !important;
+	left: 50% !important;
 	transform: translateX(-50%);
+
 
 	.datepicker-header {
 		position: relative;
+		margin-bottom: 20px;
 	}
 
 	.datepicker-header .view-switch {
@@ -23,6 +25,42 @@
 		background: none;
 		border: none;
 	}
+
+	.datepicker-cell {
+		margin-bottom: 14px;
+		color: #808080;
+		display: block;
+		position: relative;
+	}
+	.datepicker-cell:before {
+		content: '';
+		height: 24px;
+		width: 24px;
+		border-radius: 50%;
+		position: absolute;
+		top: -6px;
+		left: -7px;
+		background-color: $c-dark-green;
+		display: none;
+		z-index: -1;
+	}
+
+	.datepicker-cell.selected {
+		color: $c-white;
+		position: relative;
+
+		&:before {
+			display: block;
+		}
+	}
+/*
+	.datepicker-cell.selected:after {
+		content: '';
+		border-radius: 50%;
+		position: absolute;
+		top: 0;
+		left: 0;
+	} */
 
 	.datepicker-header .prev-btn,
 	.datepicker-header .next-btn {
@@ -36,6 +74,11 @@
 		right: 0;
 	}
 
+	.days-of-week {
+		font-weight: 500;
+		margin-bottom: 15px;
+	}
+
 	.datepicker-header .prev-btn img,
 	.datepicker-header .next-btn img {
 		width: 12px;
@@ -46,8 +89,12 @@
 		transform: translate(-50%, -50%) rotate(-90deg);
 	}
 
-	.datepicker-header .prev-btn {
+	.datepicker-header .next-btn {
 		right: 10px;
+	}
+
+	.datepicker-header .prev-btn {
+		right: 24px;
 	}
 
 	.datepicker-header .prev-btn img {
