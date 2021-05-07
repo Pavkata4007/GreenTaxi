@@ -10,10 +10,20 @@ const luggageTrigger = document.querySelector('.form__controls--luggage');
  */
 
 if (typeof(luggage) != 'undefined' && luggage != null) {
+
 	luggageTrigger.addEventListener('click', function(evn) {
 
 		luggage.classList.add('is-active');
 	});
+
+	document.addEventListener('click', function(e) {
+
+		const target = e.target;
+
+		if ( !target.closest(".luggage") && !target.closest(".form__controls--luggage")) {
+			luggage.classList.remove('is-active');
+		};
+	})
 }
 
 const minuses = document.querySelectorAll('.js-minus');
@@ -26,7 +36,7 @@ const smallInput = document.querySelector('.js-small');
  * On click changes the value of the input.
  *
  * @param  {Event} evn
- * @return {[Void]}
+ * @return {Void}
  */
 
 if (typeof(minuses) != 'undefined' && minuses != null) {

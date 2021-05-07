@@ -12,4 +12,4 @@ import './modules/video-play-button';
 import './modules/popup';
 import './modules/mobile-nav';
 import './modules/input-counter';
-import './modules/clone-element';
+

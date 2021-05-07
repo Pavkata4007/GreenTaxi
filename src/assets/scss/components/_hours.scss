@@ -3,8 +3,6 @@
 \* ------------------------------------------------------------ */
 
 .hours {
-	display: none;
-	margin: 0 -5px;
 
 	select::-ms-expand {
 		display: none;
@@ -16,12 +14,22 @@
 		font-weight: 400;
 		border: none;
 		appearance: none;
-		padding: 8px 5px;
+		padding: 0 3px;
+
+		@include breakpoint-down(mobile) {
+			font-size: 2rem;
+		}
 	}
 
-	label {
+	.hours__label {
 		font-size: 1.4rem;
 		color: #666666;
 		font-weight: 400;
+		height: unset !important;
+		width: unset !important;
+
+		@include breakpoint-down(mobile) {
+			font-size: 1.8rem;
+		}
 	}
 }

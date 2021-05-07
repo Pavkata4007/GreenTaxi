@@ -59,16 +59,42 @@
 									<input type="text" class="field-location field-location--alt" id="input2" name="input2" value="Heathrow - Terminal 5"/>
 								</div><!-- /.form__controls form__controls-/-text -->
 
-								<div class="form__controls form__controls--calendar">
+								<div class="form__controls form__controls--calendar calendar-mobile">
 									<label for="calendar">
 										<img src="assets/images/svg/arrow-up.svg" alt="">
 									</label>
+
+									<div class="calendar-mobile__icon">
+										<img src="assets/images/svg/close-black.svg" alt="">
+									</div><!-- /.calendar-mobile__icon -->
 
 									<input type="text" id="calendar" name="calendar" class="field-calendar" value="Sun, Mar 28">
 
 									<span>at</span>
 
-									<input type="text" id="time" name="time" class="field-time js-time" value="18:00">
+									<input type="text" id="time" name="time" class="field-time js-time" value="18:00" disabled="disabled">
+
+									<div class="container">
+										<div class="calendar"></div><!-- /.calendar -->
+
+										<div class="hours">
+											<label for="hour" class="hours__label">Enter your departing time</label>
+
+											<select name="hour" id="hour" class="hours__select">
+												<option value="17:15">17:15</option>
+
+												<option value="18:00">18:00</option>
+
+												<option value="18:45">18:45</option>
+
+												<option value="19:30">19:30</option>
+
+												<option value="20:15">20:15</option>
+
+												<option value="21:00">21:00</option>
+											</select>
+										</div><!-- /.hours -->
+									</div><!-- /.container -->
 								</div><!-- /.form_controls -->
 
 								<div class="form__controls form__controls--people">
@@ -624,22 +650,6 @@
 				<img src="assets/images/svg/close.svg" alt="">
 			</div><!-- /.popup__icon -->
 		</div><!-- /.popup-video -->
-
-		<div class="hours">
-			<div class="form__controls form__controls--hour">
-				<label for="hour">Enter your departing time</label>
-
-				<select name="hour" id="hour" class="hours__select js-choice">
-					<option value="18:45">18:45</option>
-
-					<option value="19:30">19:30</option>
-
-					<option value="20:15">20:15</option>
-
-					<option value="21:00">21:00</option>
-				</select>
-			</div><!-- /.form__controls form__controls-/-hour -->
-		</div><!-- /.hours -->
 	</div><!-- /.wrapper -->
 
 	<include src="scripts.html"></include>
