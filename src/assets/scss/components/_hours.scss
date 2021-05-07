@@ -1,0 +1,27 @@
+/* ------------------------------------------------------------ *\
+	hours
+\* ------------------------------------------------------------ */
+
+.hours {
+	display: none;
+	margin: 0 -5px;
+
+	select::-ms-expand {
+		display: none;
+	}
+
+	.hours__select {
+		color: #333333;
+		font-size: 1.6rem;
+		font-weight: 400;
+		border: none;
+		appearance: none;
+		padding: 8px 5px;
+	}
+
+	label {
+		font-size: 1.4rem;
+		color: #666666;
+		font-weight: 400;
+	}
+}

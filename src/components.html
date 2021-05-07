@@ -56,7 +56,7 @@
 										<img src="assets/images/svg/location.svg" alt="">
 									</label>
 
-									<input type="text" class="field-location field-location--alt" id="input1" name="input1" value="Heathrow - Terminal 5"/>
+									<input type="text" class="field-location field-location--alt" id="input2" name="input2" value="Heathrow - Terminal 5"/>
 								</div><!-- /.form__controls form__controls-/-text -->
 
 								<div class="form__controls form__controls--calendar">
@@ -68,7 +68,7 @@
 
 									<span>at</span>
 
-									<input type="text" id="time" name="time" class="field-time" value="18:00">
+									<input type="text" id="time" name="time" class="field-time js-time" value="18:00">
 								</div><!-- /.form_controls -->
 
 								<div class="form__controls form__controls--people">
@@ -161,7 +161,7 @@
 											<img src="assets/images/svg/search.svg" alt="">
 								        </button>
 
-								        <input type="text" id="search" name="search" class="search__field" value="Search my journey">
+								        <input type="text" id="search2" name="search" class="search__field" value="Search my journey">
 								    </form>
 								</div><!-- /.search -->
 							</div><!-- /.form__row -->
@@ -624,6 +624,22 @@
 				<img src="assets/images/svg/close.svg" alt="">
 			</div><!-- /.popup__icon -->
 		</div><!-- /.popup-video -->
+
+		<div class="hours">
+			<div class="form__controls form__controls--hour">
+				<label for="hour">Enter your departing time</label>
+
+				<select name="hour" id="hour" class="hours__select js-choice">
+					<option value="18:45">18:45</option>
+
+					<option value="19:30">19:30</option>
+
+					<option value="20:15">20:15</option>
+
+					<option value="21:00">21:00</option>
+				</select>
+			</div><!-- /.form__controls form__controls-/-hour -->
+		</div><!-- /.hours -->
 	</div><!-- /.wrapper -->
 
 	<include src="scripts.html"></include>

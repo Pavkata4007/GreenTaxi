@@ -62,12 +62,14 @@
 	.choices__list--dropdown {
 		margin-top: 7px;
 		left: -25px;
+		box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
 	}
 
 	.choices__list--dropdown .choices__item {
 		font-size: 1.8rem;
 	}
-.choices__list--dropdown .choices__item--selectable {
+
+	.choices__list--dropdown .choices__item--selectable {
 		padding-left: 0;
 		padding-right: 0;
 		text-align: center;
