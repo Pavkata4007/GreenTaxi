@@ -21,6 +21,7 @@
 
 		@include breakpoint-down(mobile-medium) {
 			display: block;
+			opacity: .3;
 		}
 	}
 

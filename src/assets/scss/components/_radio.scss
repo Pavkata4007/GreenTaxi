@@ -33,7 +33,7 @@
 		width: 24px;
 		background-color: $c-white;
 		border-radius: 50%;
-		border: 2px solid $c-black;
+		border: 1px solid $c-black;
 	}
 
 	&:hover input ~ .radio__button {
@@ -57,8 +57,8 @@
 	.radio__button:after {
 	 	top: 3px;
 		left: 3px;
-		width: 14px;
-		height: 14px;
+		width: 16px;
+		height: 16px;
 		border-radius: 50%;
 		background: $c-black;
 	}

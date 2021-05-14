@@ -35,7 +35,7 @@
 	}
 
 	.container {
-		top: 128px;
+		top: 84px;
 		left: 50%;
 		transform: translate(-50%);
 		margin: 0;
@@ -43,6 +43,10 @@
 		border-radius: 5px;
 		box-shadow: none;
 		padding: 33px 8px 28px 10px;
+
+		@include breakpoint-down(mobile) {
+			top: 120px;
+		}
 	}
 
 	.datepicker .datepicker-header .view-switch {

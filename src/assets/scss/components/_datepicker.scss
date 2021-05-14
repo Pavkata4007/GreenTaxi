@@ -22,27 +22,20 @@
 	}
 
 	.datepicker-cell {
-		margin-bottom: 14px;
 		color: #808080;
 		display: block;
 		position: relative;
-	}
-	.datepicker-cell:before {
-		content: '';
-		height: 24px;
-		width: 24px;
+		height: 29px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		border-radius: 50%;
-		position: absolute;
-		top: -6px;
-		left: -7px;
-		background-color: $c-dark-green;
-		display: none;
-		z-index: -1;
 	}
 
 	.datepicker-cell.selected {
 		color: $c-white;
 		position: relative;
+		background-color: $c-dark-green;
 
 		&:before {
 			display: block;
@@ -72,6 +65,7 @@
 	.days-of-week {
 		font-weight: 500;
 		margin-bottom: 15px;
+		text-align: center;
 
 		@include breakpoint-down(mobile) {
 			margin-bottom: 22px;

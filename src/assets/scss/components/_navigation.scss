@@ -5,11 +5,12 @@
 .navigation {
 
 	ul {
-		display: flex;
+ 		display: flex;
 		justify-content: center;
 
 		@include breakpoint-down(mobile) {
-			flex-wrap: wrap;
+			overflow-x: scroll;
+			justify-content: unset;
 		}
 	}
 
@@ -17,13 +18,7 @@
 		list-style: none;
 
 		@include breakpoint-down(mobile) {
-			max-width: 50%;
-			flex: 0 0 50%;
-		}
-
-		@include breakpoint-down(mobile-small) {
-			max-width: 100%;
-			flex: 0 0 100%;
+			white-space: nowrap;
 		}
 	}
 

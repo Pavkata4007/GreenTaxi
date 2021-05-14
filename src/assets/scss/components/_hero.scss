@@ -60,3 +60,14 @@
 		z-index: 2;
 	}
 }
+
+.hero--simple {
+	min-height: 500px;
+
+	h1 {
+		text-align: center;
+		color: $c-white;
+		position: relative;
+		z-index: 2;
+	}
+}

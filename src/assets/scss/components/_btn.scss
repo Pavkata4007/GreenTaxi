@@ -27,7 +27,7 @@
 	border: 2px solid $c-green;
 	border-radius: 5px;
 	font-size: 1.6rem;
-	transition: background .4s, color .4s;
+	transition: background .4s, border .4s;
 
 	@include breakpoint-down(mobile) {
 		padding: 6px 10px;
@@ -35,8 +35,8 @@
 }
 
 .btn--green:hover {
-	color: $c-green !important;
-	background-color: $c-black;
+	background-color: #03E776 !important;
+	border: 2px solid #03E776;
 }
 
 .btn--transparent {
