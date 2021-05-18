@@ -54,7 +54,7 @@
 		font-weight: 500;
 		color: $c-white;
 		background-size: cover;
-		padding: 28px 20px 24px 26px;
+		padding: 20px 20px 24px 26px;
 		border-radius: 5px;
 		margin-bottom: 34px;
 		background-color: $c-dark-green;
@@ -71,37 +71,34 @@
 
 	h3:after {
 		content: '';
-		width: 0;
-		height: 0;
-		border-left: 0px solid transparent;
-		border-right: 600px solid transparent;
-		border-top: 15px solid $c-white;
+		z-index: -1;
 		position: absolute;
-		top: 0;
+		height: 20px;
+		width: 100%;
+		top: -10px;
 		left: 0;
+		transform-origin: top right;
+	    -ms-transform: skew(0deg, -1deg);
+	    -webkit-transform: skew(0deg, -1deg);
+	    transform: skew(0deg, -1deg);
+	    background-color: $c-dark-green;
+	    border-radius: 5px;
 	}
 
 	h3:before {
 		content: '';
-		width: 0;
-		height: 0;
-		border-top: 0px solid transparent;
-		border-bottom: 200px solid transparent;
-		border-left: 20px solid $c-white;
+		height: 100%;
+		width: 100%;
+		z-index: -1;
 		position: absolute;
-		bottom: 0;
+		top: 0;
 		left: 0;
-	}
-
-	h3 {
-		font-size: 4.5rem;
-		font-weight: 500;
-		color: $c-white;
-		background-size: cover;
-		padding: 28px 20px 24px 26px;
-		border-radius: 5px;
-		margin-bottom: 34px;
-
+		transform-origin: top left;
+	    -ms-transform: skew(-10deg, 0deg);
+	    -webkit-transform: skew(-10deg, 0deg);
+	    transform: skew(-10deg, 0deg);
+	    background-color: $c-dark-green;
+	    border-radius: 5px;
 	}
 
 	h3 span {

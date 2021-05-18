@@ -29,24 +29,59 @@
 		text-align: center;
 		letter-spacing: -0.02em;
 		font-weight: 500;
+		color: $c-white;
 		background-size: cover;
-    	padding: 34px 20px 29px 5px;
-    	color: $c-white;
+    	padding: 20px 20px 29px 5px;
+		border-radius: 5px;
+		background-color: $c-dark-green;
+		position: relative;
+		z-index: 10;
     	width: 560px;
     	margin: 0 auto 48px;
-    	border-radius: 5px;
-    	position: relative;
-    	z-index: 2;
 
-    	@include breakpoint-down(mobile) {
+		@include breakpoint-down(mobile) {
     		width: unset;
     		padding: 20px 15px;
-    	}
+			margin-bottom: 23px;
+		}
+	}
+
+	h3:after {
+		content: '';
+		z-index: -1;
+		position: absolute;
+		height: 20px;
+		width: 100%;
+		top: -10px;
+		left: 0;
+		transform-origin: top right;
+	    -ms-transform: skew(0deg, -1deg);
+	    -webkit-transform: skew(0deg, -1deg);
+	    transform: skew(0deg, -1deg);
+	    background-color: $c-dark-green;
+	    border-radius: 5px;
+	}
+
+	h3:before {
+		content: '';
+		height: 100%;
+		width: 100%;
+		z-index: -1;
+		position: absolute;
+		top: 0;
+		left: 0;
+		transform-origin: top left;
+	    -ms-transform: skew(-10deg, 0deg);
+	    -webkit-transform: skew(-10deg, 0deg);
+	    transform: skew(-10deg, 0deg);
+	    background-color: $c-dark-green;
+	    border-radius: 5px;
 	}
 
 	h3 span {
 		color: $c-green;
 	}
+
 
 	.section__play-btn {
 		position: absolute;
