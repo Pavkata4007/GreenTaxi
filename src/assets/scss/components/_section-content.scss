@@ -25,6 +25,8 @@
 
 	.section__grid {
 		padding-bottom: 76px;
+		position: relative;
+		z-index: 2;
 
 		@include breakpoint-down(tablet) {
 			flex-wrap: wrap;
@@ -117,5 +119,12 @@
 			font-size: 1.6rem;
 			padding: 0 10px;
 		}
+	}
+
+	.section__icon {
+		position: absolute;
+		left: -515px;
+	    top: 57%;
+	    z-index: 1;
 	}
 }

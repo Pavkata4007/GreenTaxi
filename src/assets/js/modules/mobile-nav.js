@@ -19,3 +19,17 @@ if (typeof(mobileNav) != 'undefined' && mobileNav != null) {
 }
 
 
+/**
+ * When a link is clicked the nav to hide.
+ *
+ */
+const links = document.querySelectorAll('.js-nav a');
+
+for (link of links) {
+
+	link.addEventListener('click', function(e) {
+		mobileNav.classList.remove('mobile-nav--active');
+		body.classList.remove('is-fixed');
+		headerContent.classList.remove('is-active');
+	})
+};
